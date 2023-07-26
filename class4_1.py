@@ -1,4 +1,5 @@
 from PIL import Image 
+import sys
 
 # 画像のファイルパスを指定して画像を開く 
 
@@ -50,3 +51,4 @@ image_crop = image.crop((left, upper, right, lower))
 image_resized = image_crop.resize((4032, 3024))
 image_resized.save(f'./resource/image_croped_{left}_{upper}.jpg', quality=95)
 
+print('HELLO')
